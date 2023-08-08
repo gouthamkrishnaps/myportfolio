@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+    /* overflow-x: hidden; */
+}
+.container{
+    width: 100%;
+    height: 100vh; /* vh =19.2px */
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.navbar{
+    width: 85%;
+    display: flex; /* side by side */
+    justify-content: space-between; /* creating space between 2 tags */
+    margin-left: 7%;
+    align-items: center;
+    /* position: fixed;
+    top: 0; */
+}
+.logo{
+    width: 130px;
+}
+.listitems{
+    display: inline-block; /* to keep in a line */
+    margin: 10px 20px;/* top+bottom & left+rignt */
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.links:hover{  /* selectors:pseudo  class{properties;} */
+    color: greenyellow;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.title_h1{
+    font-size: 50px;
+}
+#name{
+    color: greenyellow;
+}
+.download{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 11px;
+    border-radius: 8px;
+    border-style: hidden;
+    box-shadow: 1px 4px 4px 1px gray;
+    font-weight: bold;
+}
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+    
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* to nullyfy the left 50% ,due to need of left value */
+    transition: bottom 1s , left 1s;
+    bottom: 0px;
+}
+.images:hover #shape{
+    bottom: 50px;
+}
+.images:hover #girl{
+    left: 30%;
+}
+#about{
+    margin: 24% 8% 0% 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 40px;
+}
+.heading span{
+    font-size: 25px;
+    color: rgb(170, 255, 0);
+}
+.about_content{
+    display: grid; /* using instead of display: flex */
+    grid-template-columns: repeat(2,1fr);/* to place div side by side by giving what space they occur */ /* 1fr=255px */
+    margin-top: 30px;
+    gap: 1rem;/* 1rem= 16px */
+    /* padding: 8%; */
+}
+.information{
+    margin-top: 2rem;
+}
+.info_box{
+    margin-bottom: 1rem;
+}
+.about_detials{
+    font-size: 18px;
+    text-align: justify;
+}
+.about_image img{
+    width: 80%;
+    border-radius: 20px;
+}
+.info_box span{
+    margin-left: 1rem;
+}
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+.skill_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.skill_image img{
+    width: 90%;
+    padding-left: 4rem;
+}
+.bar_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.base_bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+}
+.html_bar{
+    background-color: blue;
+    width: 95%;
+}
+.css_bar{
+    background-color: chartreuse;
+    width: 88%;
+}
+.js_bar{
+    background-color: rgb(255, 132, 0);
+    width: 89%;
+}
+.react_bar{
+    background-color: rgb(255, 221, 2);
+    width: 85%;
+}
+.social_links{
+    display: flex;
+    justify-content: center;
+    /* margin: 2.5% 40% 0% 40%; */
+    align-items: center;
+}
+.media_icons,.gototop{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px;
+
+}
+.media_icons:hover{
+    background-image: linear-gradient(to bottom left,rgb(156, 137, 137),rgb(255, 255, 255),rgb(225, 245, 0),rgb(255, 255, 255),rgb(195, 186, 186));
+    transition: 1000ms linear;
+
+}
+.icon{
+    color: black;
+}
+.icon:hover{
+    animation: shake 0.75s;
+}
+@keyframes shake {
+    10% {
+      transform: rotate(15deg);
+      color: darkmagenta;
+    }
+    20% {
+      transform: rotate(-15deg);
+    }
+    30% {
+        transform: rotate(15deg);
+      }
+    40% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    60% {
+        transform: rotate(-15deg);
+    }
+    70% {
+        transform: rotate(15deg);
+      }
+    80% {
+        transform: rotate(-15deg);
+    }
+    90% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+.linked:hover{
+    color: rgb(0, 34, 255);
+}
+.github:hover{
+    color: rgb(2, 36, 96);
+}
+.whatsapp:hover{
+    color: rgb(38, 255, 0);
+}
+.twitter:hover{
+    color: rgb(8, 128, 249);
+}
+.instagram:hover{
+    color: rgb(255, 0, 0);
+}
+.facebook:hover{
+    color: blue;
+}
+.copyrights{
+    margin-bottom: 20%;
+}
+.copytext{
+    margin-top: 2.5%;
+    text-align: center;
+    font-size: 20px;
+}
+.gototop{
+    /* margin-left: 90%; */
+    float: right;
+    text-decoration: none; 
+    background-image: linear-gradient(to bottom left,rgb(156, 137, 137),rgb(255, 255, 255),rgb(225, 245, 0),rgb(255, 255, 255),rgb(195, 186, 186));  
+}
+.gototop:hover{
+    color: rgb(34, 255, 0);
+}
+/* .media_icons:hover i{
+    color: rgb(255, 255, 255);
+} */
