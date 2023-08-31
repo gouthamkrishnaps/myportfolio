@@ -4,6 +4,9 @@
     font-family: 'Quicksand', sans-serif;
     /* overflow-x: hidden; */
 }
+html{
+    scroll-behavior: smooth;
+}
 .container{
     width: 100%;
     height: 100vh; /* vh =19.2px */
